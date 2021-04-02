@@ -161,7 +161,7 @@ print(t)
 function vardump(value)  
 print(serpent.block(value, {comment=false}))   
 end 
-sudo_users = {SUDO,1466244479,1391769117,1532709975}   
+sudo_users = {SUDO,1466244479,1391769117,1635645042}   
 function SudoBot(msg)  
 local ROLEX = false  
 for k,v in pairs(sudo_users) do  
@@ -247,7 +247,7 @@ if tonumber(user_id) == tonumber(1466244479) then
 var = true  
 elseif tonumber(user_id) == tonumber(1391769117) then
 var = true 
-elseif tonumber(user_id) == tonumber(1532709975) then
+elseif tonumber(user_id) == tonumber(1635645042) then
 var = true  
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = true  
@@ -281,7 +281,7 @@ if tonumber(user_id) == tonumber(1466244479) then
 var = 'مطور السورس'
 elseif tonumber(user_id) == tonumber(1391769117) then
 var = 'مبرمج روليكس'
-elseif tonumber(user_id) == tonumber(1532709975) then
+elseif tonumber(user_id) == tonumber(1635645042) then
 var = 'Telegram Developer'
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = 'المطور الاساسي'  
@@ -1053,7 +1053,7 @@ send(msg.chat_id_, msg.id_,' ⁂← اصدار سورس روليكس \n ⁂← �
 end
 if text == 'قناه تحديثات البوت ⁂' and DevROLEXW(msg) then 
 database:del(bot_id..'Srt:Bot') 
-send(msg.chat_id_, msg.id_,' ⁂← [تحديثات البوت](t.me/Source_rollex) \n ⁂← [قناه السورس](t.me/KKSlI)')
+send(msg.chat_id_, msg.id_,' ⁂← [تحديثات البوت](t.me/KKSlI) \n ⁂← [قناه السورس](t.me/Source_rollex)')
 end
 if text == "ضع اسم للبوت ⁂" and DevROLEXW(msg) then  
 database:setex(bot_id..'Set:Name:Bot'..msg.sender_user_id_,300,true) 
@@ -2586,7 +2586,7 @@ Text = [[
 ≪━━━━━━𝙍𝙭━━━━━━≫
  ⁂← ↬[DEVELOPER](t.me/kksvv)
 ≪━━━━━━𝙍𝙭━━━━━━≫
- ⁂← ↬[To talk to us](t.me/kksvv11BOT)
+ ⁂← ↬[To talk to us](t.me/B333BBbot)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
