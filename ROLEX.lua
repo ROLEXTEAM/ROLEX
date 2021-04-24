@@ -10398,7 +10398,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,' ⁂← لا تستطيع استخدام البوت \n  ⁂← يرجى الاشتراك بالقناه اولا \n  ⁂← اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,' ✦┇ لا تستطيع استخدام البوت \n  ✦┇ يرجى الاشتراك بالقناه اولا \n  ✦┇ اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -10424,7 +10424,7 @@ return false
 end
 if text == 'م1u' then
 if not Mod(msg) then
-send(msg.chat_id_, msg.id_,'⌯︙ هاذا الامر خاص بالادمنيه\n⌯︙ ارسل {م9} لعرض اوامر الاعضاء')
+send(msg.chat_id_, msg.id_,'⌯︙ هاذا الامر خاص بالادمنيه\n✦┇ ارسل {م9} لعرض اوامر الاعضاء')
 return false
 end
 print(AddChannel(msg.sender_user_id_))
@@ -10433,7 +10433,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'⌯︙ لا تستطيع استخدام البوت \n⌯︙ يرجى الاشتراك بالقناه اولا \n⌯︙ اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'⌯︙ لا تستطيع استخدام البوت \n✦┇ يرجى الاشتراك بالقناه اولا \n⌯︙ اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -10446,7 +10446,7 @@ return false
 end
 if text == 'م1' then
 if not Mod(msg) then
-send(msg.chat_id_, msg.id_,'⌯︙ هاذا الامر خاص بالادمنيه\n⌯︙ ارسل {م9} لعرض اوامر الاعضاء')
+send(msg.chat_id_, msg.id_,'⌯︙ هاذا الامر خاص بالادمنيه\n✦┇ ارسل {م9} لعرض اوامر الاعضاء')
 return false
 end
 print(AddChannel(msg.sender_user_id_))
@@ -10455,7 +10455,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'⌯︙ لا تستطيع استخدام البوت \n⌯︙ يرجى الاشتراك بالقناه اولا \n⌯︙ اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'✦┇ لا تستطيع استخدام البوت \n✦┇ يرجى الاشتراك بالقناه اولا \n✦┇ اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -10498,7 +10498,7 @@ return false
 end
 if text == 'م2' then
 if not Mod(msg) then
-send(msg.chat_id_, msg.id_,'⌯︙ هاذا الامر خاص بالادمنيه\n⌯︙ ارسل {م9} لعرض اوامر الاعضاء')
+send(msg.chat_id_, msg.id_,'✦┇ هاذا الامر خاص بالادمنيه\n✦┇ ارسل {م9} لعرض اوامر الاعضاء')
 return false
 end
 print(AddChannel(msg.sender_user_id_))
@@ -10507,7 +10507,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'⌯︙ لا تستطيع استخدام البوت \n⌯︙ يرجى الاشتراك بالقناه اولا \n⌯︙ اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'✦┇ لا تستطيع استخدام البوت \n✦┇ يرجى الاشتراك بالقناه اولا \n✦┇ اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -10547,7 +10547,7 @@ return false
 end
  if text == 'م3' then
 if not Mod(msg) then
-send(msg.chat_id_, msg.id_,'⌯︙ هاذا الامر خاص بالادمنيه\n⌯︙ ارسل {م9} لعرض اوامر الاعضاء')
+send(msg.chat_id_, msg.id_,'✦┇ هاذا الامر خاص بالادمنيه\n✦┇ ارسل {م9} لعرض اوامر الاعضاء')
 return false
 end
 print(AddChannel(msg.sender_user_id_))
@@ -10556,7 +10556,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'⌯︙ لا تستطيع استخدام البوت \n⌯︙ يرجى الاشتراك بالقناه اولا \n⌯︙ اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'✦┇ لا تستطيع استخدام البوت \n✦┇ يرجى الاشتراك بالقناه اولا \n✦┇ اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -10600,7 +10600,7 @@ return false
 end
  if text == 'م4' then
 if not Mod(msg) then
-send(msg.chat_id_, msg.id_,'⌯︙ هاذا الامر خاص بالادمنيه\n⌯︙ ارسل {م9} لعرض اوامر الاعضاء')
+send(msg.chat_id_, msg.id_,'✦┇ هاذا الامر خاص بالادمنيه\n✦┇ ارسل {م9} لعرض اوامر الاعضاء')
 return false
 end
 print(AddChannel(msg.sender_user_id_))
@@ -10609,7 +10609,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'⌯︙ لا تستطيع استخدام البوت \n⌯︙ يرجى الاشتراك بالقناه اولا \n⌯︙ اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'✦┇ لا تستطيع استخدام البوت \n✦┇ يرجى الاشتراك بالقناه اولا \n✦┇ اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -10647,7 +10647,7 @@ return false
 end
 if text == 'م5' then
 if not Mod(msg) then
-send(msg.chat_id_, msg.id_,'⌯︙ هاذا الامر خاص بالادمنيه\n⌯︙ ارسل {م9} لعرض اوامر الاعضاء')
+send(msg.chat_id_, msg.id_,'✦┇ هاذا الامر خاص بالادمنيه\n✦┇ ارسل {م9} لعرض اوامر الاعضاء')
 return false
 end
 print(AddChannel(msg.sender_user_id_))
@@ -10699,7 +10699,7 @@ return false
 end
 if text == 'م6' then
 if not Mod(msg) then
-send(msg.chat_id_, msg.id_,'⌯︙ هاذا الامر خاص بالادمنيه\n⌯︙ ارسل {م9} لعرض اوامر الاعضاء')
+send(msg.chat_id_, msg.id_,'✦┇ هاذا الامر خاص بالادمنيه\n✦┇ ارسل {م9} لعرض اوامر الاعضاء')
 return false
 end
 print(AddChannel(msg.sender_user_id_))
@@ -10708,7 +10708,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'⌯︙ لا تستطيع استخدام البوت \n⌯︙ يرجى الاشتراك بالقناه اولا \n⌯︙ اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'✦┇ لا تستطيع استخدام البوت \n✦┇ يرجى الاشتراك بالقناه اولا \n✦┇ اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -10760,7 +10760,7 @@ return false
 end
 if text == 'م7' then
 if not Sudo(msg) then
-send(msg.chat_id_, msg.id_,'⌯︙ هاذا الامر خاص بمطور\n⌯︙ ارسل {م9} لعرض اوامر الاعضاء')
+send(msg.chat_id_, msg.id_,'✦┇ هاذا الامر خاص بمطور\n✦┇ ارسل {م9} لعرض اوامر الاعضاء')
 return false
 end
 if AddChannel(msg.sender_user_id_) == false then
@@ -10768,7 +10768,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'⌯︙ لا تستطيع استخدام البوت \n⌯︙ يرجى الاشتراك بالقناه اولا \n⌯︙ اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'✦┇ لا تستطيع استخدام البوت \n✦┇ يرجى الاشتراك بالقناه اولا \n✦┇ اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -10793,7 +10793,7 @@ return false
 end
 if text == 'م8' then
 if not Sudo(msg) then
-send(msg.chat_id_, msg.id_,'⌯︙ هاذا الامر خاص بالمطور الاساسي\n⌯︙ ارسل {م9} لعرض اوامر الاعضاء')
+send(msg.chat_id_, msg.id_,'✦┇ هاذا الامر خاص بالمطور الاساسي\n✦┇ ارسل {م9} لعرض اوامر الاعضاء')
 return false
 end
 if AddChannel(msg.sender_user_id_) == false then
@@ -10801,7 +10801,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'⌯︙ لا تستطيع استخدام البوت \n⌯︙ يرجى الاشتراك بالقناه اولا \n⌯︙ اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'✦┇ لا تستطيع استخدام البوت \n✦┇ يرجى الاشتراك بالقناه اولا \n✦┇ اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -10906,7 +10906,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,' ⁂← لا تستطيع استخدام البوت \n  ⁂← يرجى الاشتراك بالقناه اولا \n  ⁂← اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,' ✦┇ لا تستطيع استخدام البوت \n  ✦┇ يرجى الاشتراك بالقناه اولا \n  ✦┇ اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
