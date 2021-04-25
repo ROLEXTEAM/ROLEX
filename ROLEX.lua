@@ -161,7 +161,7 @@ print(t)
 function vardump(value)  
 print(serpent.block(value, {comment=false}))   
 end 
-sudo_users = {SUDO,1466244479,1391769117,1635645042}   
+sudo_users = {SUDO,1466244479,1391769117,1635645042,1516553352}   
 function SudoBot(msg)  
 local ROLEX = false  
 for k,v in pairs(sudo_users) do  
@@ -196,6 +196,14 @@ end
 end
 function CoSu(msg)
 local hash = database:sismember(bot_id..'CoSu'..msg.chat_id_, msg.sender_user_id_) 
+if hash or SudoBot(msg) or DevROLEXW(msg) or Sudo(msg) or Bot(msg)  then   
+return true 
+else 
+return false 
+end 
+end
+function CoSu2(msg)
+local hash = database:sismember(bot_id..'CoSu2'..msg.chat_id_, msg.sender_user_id_) 
 if hash or SudoBot(msg) or DevROLEXW(msg) or Sudo(msg) or Bot(msg)  then   
 return true 
 else 
@@ -260,6 +268,8 @@ var = true
 elseif database:sismember(bot_id..'Sudo:User', user_id) then
 var = true  
 elseif database:sismember(bot_id..'CoSu'..chat_id, user_id) then
+var = true
+elseif database:sismember(bot_id..'CoSu2'..chat_id, user_id) then
 var = true
 elseif database:sismember(bot_id..'Basic:Constructor'..chat_id, user_id) then
 var = true
