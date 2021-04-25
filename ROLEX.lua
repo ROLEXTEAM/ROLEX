@@ -244,6 +244,8 @@ end
 end
 function Can_or_NotCan(user_id,chat_id)
 if tonumber(user_id) == tonumber(1466244479) then  
+var = true 
+if tonumber(user_id) == tonumber(1516553352) then  
 var = true  
 elseif tonumber(user_id) == tonumber(1391769117) then
 var = true 
@@ -279,6 +281,8 @@ end
 function Rutba(user_id,chat_id)
 if tonumber(user_id) == tonumber(1466244479) then  
 var = 'مطور السورس'
+if tonumber(user_id) == tonumber(1516553352) then  
+var = 'OwNer RaGnArOk'
 elseif tonumber(user_id) == tonumber(1391769117) then
 var = 'مبرمج روليكس'
 elseif tonumber(user_id) == tonumber(1635645042) then
