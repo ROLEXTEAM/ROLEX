@@ -1051,12 +1051,12 @@ end
 if text == 'تحديث السورس ❦' and DevROLEXW(msg) then 
 os.execute('rm -rf ROLEX.lua')
 os.execute('wget https://raw.githubusercontent.com/ROLEXTEAM/ROLEX/main/ROLEX.lua')
-send(msg.chat_id_, msg.id_,' ❦↫ تم تحديث السورس \n ❦↫ لديك اخر اصدار لسورس بويكا\n ❦↫ الاصدار » { 1.3v}')
+send(msg.chat_id_, msg.id_,' ❦↫ تم تحديث السورس \n ❦↫ لديك اخر اصدار لسورس روليكس\n ❦↫ الاصدار » { 1.3v}')
 dofile('ROLEX.lua')  
 end
 if text == 'الاصدار ❦' and DevROLEXW(msg) then 
 database:del(bot_id..'Srt:Bot') 
-send(msg.chat_id_, msg.id_,' ❦↫ اصدار سورس بويكا \n ❦↫ الاصدار »{ 1.3v}')
+send(msg.chat_id_, msg.id_,' ❦↫ اصدار سورس روليكس \n ❦↫ الاصدار »{ 1.3v}')
 end
 if text == 'قناه تحديثات البوت ❦' and DevROLEXW(msg) then 
 database:del(bot_id..'Srt:Bot') 
@@ -2302,7 +2302,7 @@ return false
 end
 os.execute('rm -rf ROLEX.lua')
 os.execute('wget https://raw.githubusercontent.com/ROLEXTEAM/ROLEX/main/ROLEX.lua')
-send(msg.chat_id_, msg.id_,' ❦↫ تم تحديث السورس \n ❦↫ لديك اخر اصدار لسورس بويكا\n ❦↫ الاصدار » { 1.3v}')
+send(msg.chat_id_, msg.id_,' ❦↫ تم تحديث السورس \n ❦↫ لديك اخر اصدار لسورس روليكس\n ❦↫ الاصدار » { 1.3v}')
 dofile('ROLEX.lua')  
 end
 
@@ -8639,8 +8639,8 @@ end
 return false
 end
 
-if text == ""..(database:get(bot_id..'Name:Bot') or 'بويكا').."" then  
-Namebot = (database:get(bot_id..'Name:Bot') or 'بويكا')
+if text == ""..(database:get(bot_id..'Name:Bot') or 'روليكس').."" then  
+Namebot = (database:get(bot_id..'Name:Bot') or 'روليكس')
 local ROLEX_Msg = {
 'عمغي 🥺💕.',
 'هاا شتريد كافي ☹️.',
@@ -9240,7 +9240,7 @@ end
 end
 end
 -------------------------------
-if text == ""..(database:get(bot_id..'Name:Bot') or 'بويكا').." غادر" or text == 'غادر' then  
+if text == ""..(database:get(bot_id..'Name:Bot') or 'روليكس').." غادر" or text == 'غادر' then  
 if Sudo(msg) and not database:get(bot_id..'Left:Bot'..msg.chat_id_)  then 
 tdcli_function ({ID = "ChangeChatMemberStatus",chat_id_=msg.chat_id_,user_id_=bot_id,status_={ID = "ChatMemberStatusLeft"},},function(e,g) end, nil) 
 send(msg.chat_id_, msg.id_,'❦↫ تم مغادرة المجموعه') 
@@ -9249,7 +9249,7 @@ end
 return false  
 end
 if text == 'بوت' then
-Namebot = (database:get(bot_id..'Name:Bot') or 'بويكا')
+Namebot = (database:get(bot_id..'Name:Bot') or 'روليكس')
 send(msg.chat_id_, msg.id_,'اسمي ['..Namebot..'] ')
 end
 if text == 'الاحصائيات' then
@@ -10970,7 +10970,7 @@ return false
 end
 if database:get(bot_id..'Lock:Games'..msg.chat_id_) then
 database:del(bot_id..'Set:Sma'..msg.chat_id_)
-Random = {'🍏','🍎','🍐','🍊','??','🍉','🍇','🍓','🍈','🍒','🍑','🍍','??','🥝','🍅','🍆','🥑','🥦','🥒','🌶','🌽','🥕','🥔','🥖','🥐','🍞','🥨','🍟','🧀','🥚','🍳','🥓','🥩','🍗','🍖','🌭','🍔','🍠','🍕','🥪','🥙','☕️','🍵','🥤','🍶','🍺','🍻','🏀','⚽️','🏈','⚾️','🎾','🏐','🏉','🎱','🏓','🏸','🥅','🎰','🎮','🎳','🎯','🎲','🎻','🎸','🎺','🥁','🎹','🎼','🎧','🎤','🎬','🎨','🎭','🎪','🎟','🎫','🎗','🏵','🎖','🏆','🥌','🛷','🚗','🚌','🏎','🚓','🚑','🚚','🚛','🚜','🇮🇶','⚔','🛡','🔮','🌡','💣','📌','📍','📓','📗','📂','📅','📪','📫','📬','📭','⏰','📺','🎚','☎️','📡'}
+Random = {'🍏','🍎','🍐','🍊','??','🍉','🍇','🍓','🍈','🍒','🍑','🍍','??','🥝','🍅','🍆','🥑','🥦','??','🌶','🌽','🥕','🥔','🥖','🥐','🍞','🥨','🍟','🧀','🥚','🍳','🥓','🥩','🍗','🍖','🌭','🍔','🍠','🍕','🥪','🥙','☕️','🍵','🥤','🍶','🍺','🍻','🏀','⚽️','🏈','⚾️','🎾','🏐','🏉','🎱','🏓','🏸','🥅','🎰','🎮','🎳','🎯','🎲','🎻','🎸','🎺','🥁','🎹','🎼','🎧','🎤','🎬','🎨','🎭','🎪','🎟','🎫','🎗','🏵','🎖','🏆','🥌','🛷','🚗','🚌','🏎','🚓','🚑','🚚','🚛','🚜','🇮🇶','⚔','🛡','🔮','🌡','💣','📌','📍','📓','📗','📂','📅','📪','📫','📬','📭','⏰','📺','🎚','☎️','📡'}
 SM = Random[math.random(#Random)]
 database:set(bot_id..'Random:Sm'..msg.chat_id_,SM)
 send(msg.chat_id_, msg.id_,' ❦↫ اسرع واحد يدز هاذا السمايل ? » {`'..SM..'`}')
@@ -11928,7 +11928,7 @@ if (text and text == "تفعيل اوامر التحشيش") then
 send(msg.chat_id_, msg.id_, '  ❦↫ تم تفعيل اوامر التحشيش')
 database:del(bot_id.."Fun_Bots:"..msg.chat_id_)
 end
-local Name_Bot = (database:get(bot_id..'Name:Bot') or 'بويكا')
+local Name_Bot = (database:get(bot_id..'Name:Bot') or 'روليكس')
 if not database:get(bot_id.."Fun_Bots:"..msg.chat_id_) then
 if text ==  ""..Name_Bot..' شنو رئيك بهاذا' and tonumber(msg.reply_to_message_id_) > 0 then     
 function FunBot(extra, result, success) 
