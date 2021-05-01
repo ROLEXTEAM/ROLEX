@@ -2587,13 +2587,13 @@ Text = [[
 ┉ ┉ ༺𝚁𝙴༻┉ ┉
 ـ𝙎𝙤𝙪𝙧𝘾𝙚🇩🇪𝙍𝗼𝙇𝙚𝙓🕷
 ┉ ┉ ༺𝚁𝙴༻┉ ┉
- ⁂← ↬[Channel ROLEX](t.me/Source_rollex) 
+ ❦↫ ↬[Channel ROLEX](t.me/Source_rollex) 
 ┉ ┉ ༺𝚁𝙴༻┉ ┉
- ⁂← ↬[Information](t.me/KKSlI)
+ ❦↫ ↬[Information](t.me/T_aLeN)
 ┉ ┉ ༺𝚁𝙴༻┉ ┉
- ⁂← ↬[DEVELOPER](t.me/B333BB)
+ ❦↫ ↬[DEVELOPER](t.me/B333BB)
 ┉ ┉ ༺𝚁𝙴༻┉ ┉
- ⁂← ↬[To talk to us](t.me/B333BBbot)
+ ❦↫ ↬[To talk to us](t.me/B333BBbot)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
