@@ -138,7 +138,7 @@ _redis = load_redis()
 --------------------------------------------------------------------------------------------------------------
 print([[
 > CH › @Source_rollex
-> CH › @KKSlI
+> CH › @T_eLaN
 ~> DEVELOPER › @B333BB
 ]])
 sudos = dofile("./Info.lua") 
