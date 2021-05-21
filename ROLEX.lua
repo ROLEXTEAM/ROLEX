@@ -283,7 +283,7 @@ return var
 end 
 function Rutba(user_id,chat_id)
 if tonumber(user_id) == tonumber(1635645042) then  
-var = 'صخل روليكس'
+var = 'Telegram Developer'
 elseif tonumber(user_id) == tonumber(1391769117) then
 var = '𝘿𝙚𝙫 𝘼𝙡𝙞'
 elseif tonumber(user_id) == tonumber(1466244479) then
