@@ -64,27 +64,27 @@ os.execute('lua install.lua')
 end
 local function Files_Info_Get()
 Create_Info(database:get(Server_Done.."Token_Write"),database:get(Server_Done.."UserSudo_Write"),database:get(Server_Done.."User_Write"))  
-local RunBot = io.open("TELAND", 'w')
+local RunBot = io.open("ROLEX", 'w')
 RunBot:write([[
 #!/usr/bin/env bash
-cd $HOME/TELAND
+cd $HOME/ROLEX
 token="]]..database:get(Server_Done.."Token_Write")..[["
-rm -fr TELAND.lua
-wget "https://raw.githubusercontent.com/TELANDTEAM/TELAND/main/TELAND.lua"
+rm -fr ROLEX.lua
+wget "https://raw.githubusercontent.com/ROLEXTEAM/ROLEX/main/ROLEX.lua"
 while(true) do
 rm -fr ../.telegram-cli
-./tg -s ./TELAND.lua -p PROFILE --bot=$token
+./tg -s ./ROLEX.lua -p PROFILE --bot=$token
 done
 ]])
 RunBot:close()
 local RunTs = io.open("Run", 'w')
 RunTs:write([[
 #!/usr/bin/env bash
-cd $HOME/TELAND
+cd $HOME/ROLEX
 while(true) do
 rm -fr ../.telegram-cli
-screen -S TELAND -X kill
-screen -S TELAND ./TELAND
+screen -S ROLEX -X kill
+screen -S ROLEX ./ROLEX
 done
 ]])
 RunTs:close()
