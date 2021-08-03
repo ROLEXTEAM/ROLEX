@@ -173,9 +173,9 @@ var = 'Telegram Developer'
 elseif tonumber(user_id) == tonumber(1635645042) then
 var = 'مطوࢪ السوࢪس'
 elseif tonumber(user_id) == tonumber(1466244479) then
-var = 'مطيعلش'
+var = 'مطوࢪ السوࢪس'
 elseif tonumber(user_id) == tonumber(1470367089) then
-var = 'ڪٰاࢪدݪ العار'
+var = 'ڪٰاࢪدݪ نابـﯛݪـيَ'
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = 'المطور الاساسي'  
 elseif database:sismember(bot_id.."DEV:Sudo:T", user_id) then 
