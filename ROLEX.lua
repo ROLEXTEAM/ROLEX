@@ -9,7 +9,7 @@ database = redis.connect('127.0.0.1', 6379)
 sudos   = dofile("Info.lua")
 bot_id  = token:match("(%d+)")  
 SUDO = SUDO
-sudo_users = {SUDO,1391769117,1222704064,1466244479,1516553352,1470367089}   
+sudo_users = {SUDO,1391769117,1466244479,1470367089}   
 print([[
 > CH › @kksili
 > CH › @T_aLeN
@@ -67,22 +67,6 @@ return idbot
 end
 function SudoBotCoSu(msg) 
 local hash = database:sismember(bot_id..'CoSu'..msg.chat_id_, msg.sender_user_id_) 
-if hash or SudoBot(msg) or DevROLEXW(msg) or Sudo(msg) or Bot(msg)  then  
-return true  
-else  
-return false  
-end  
-end
-function SudoBotCoSu2(msg) 
-local hash = database:sismember(bot_id..'CoSu2'..msg.chat_id_, msg.sender_user_id_) 
-if hash or SudoBot(msg) or DevROLEXW(msg) or Sudo(msg) or Bot(msg)  then  
-return true  
-else  
-return false  
-end  
-end
-function SudoBotCoSu3(msg) 
-local hash = database:sismember(bot_id..'CoSu3'..msg.chat_id_, msg.sender_user_id_) 
 if hash or SudoBot(msg) or DevROLEXW(msg) or Sudo(msg) or Bot(msg)  then  
 return true  
 else  
@@ -158,10 +142,6 @@ elseif database:sismember(bot_id..'Sudo:User', user_id) then
 var = true  
 elseif database:sismember(bot_id..'CoSu'..chat_id, user_id) then
 var = true
-elseif database:sismember(bot_id..'CoSu2'..chat_id, user_id) then
-var = true
-elseif database:sismember(bot_id..'CoSu3'..chat_id, user_id) then
-var = true
 elseif database:sismember(bot_id..'Basic:Constructor'..chat_id, user_id) then
 var = true
 elseif database:sismember(bot_id..'Constructor'..chat_id, user_id) then
@@ -182,11 +162,7 @@ end
 function Rutba(user_id,chat_id)
 if tonumber(user_id) == tonumber(1391769117) then  
 var = 'Telegram Developer'
-elseif tonumber(user_id) == tonumber(1222704064) then
-var = 'مطوࢪ السوࢪس'
 elseif tonumber(user_id) == tonumber(1466244479) then
-var = 'مطوࢪ السوࢪس'
-elseif tonumber(user_id) == tonumber(1516553352) then
 var = 'مطوࢪ السوࢪس'
 elseif tonumber(user_id) == tonumber(1470367089) then
 var = 'مطوࢪ السوࢪس'
