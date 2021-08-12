@@ -9,7 +9,7 @@ database = redis.connect('127.0.0.1', 6379)
 sudos   = dofile("Info.lua")
 bot_id  = token:match("(%d+)")  
 SUDO = SUDO
-sudo_users = {SUDO,1391769117,1222704064,1466244479,1516553352,1470367089}   
+sudo_users = {SUDO,1391769117,1466244479,1470367089}   
 print([[
 > CH › @kksili
 > CH › @T_aLeN
@@ -73,22 +73,6 @@ else
 return false  
 end  
 end
-function SudoBotCoSu2(msg) 
-local hash = database:sismember(bot_id..'CoSu2'..msg.chat_id_, msg.sender_user_id_) 
-if hash or SudoBot(msg) or DevROLEXW(msg) or Sudo(msg) or Bot(msg)  then  
-return true  
-else  
-return false  
-end  
-end
-function SudoBotCoSu3(msg) 
-local hash = database:sismember(bot_id..'CoSu3'..msg.chat_id_, msg.sender_user_id_) 
-if hash or SudoBot(msg) or DevROLEXW(msg) or Sudo(msg) or Bot(msg)  then  
-return true  
-else  
-return false  
-end  
-end
 function Sudo(msg) 
 local hash = database:sismember(bot_id..'Sudo:User', msg.sender_user_id_) 
 if hash or SudoBot(msg) or DevROLEXW(msg) or Bot(msg)  then  
@@ -139,13 +123,9 @@ end
 end
 function Can_or_NotCan(user_id,chat_id)
 if tonumber(user_id) == tonumber(1391769117) then  
-var = true  
-elseif tonumber(user_id) == tonumber(1222704064) then
-var = true 
+var = true   
 elseif tonumber(user_id) == tonumber(1466244479) then
 var = true 
-elseif tonumber(user_id) == tonumber(1516553352) then
-var = true
 elseif tonumber(user_id) == tonumber(1470367089) then
 var = true
 elseif tonumber(user_id) == tonumber(SUDO) then
@@ -157,10 +137,6 @@ var = true
 elseif database:sismember(bot_id..'Sudo:User', user_id) then
 var = true  
 elseif database:sismember(bot_id..'CoSu'..chat_id, user_id) then
-var = true
-elseif database:sismember(bot_id..'CoSu2'..chat_id, user_id) then
-var = true
-elseif database:sismember(bot_id..'CoSu3'..chat_id, user_id) then
 var = true
 elseif database:sismember(bot_id..'Basic:Constructor'..chat_id, user_id) then
 var = true
@@ -182,11 +158,7 @@ end
 function Rutba(user_id,chat_id)
 if tonumber(user_id) == tonumber(1391769117) then  
 var = 'Telegram Developer'
-elseif tonumber(user_id) == tonumber(1222704064) then
-var = 'مطوࢪ السوࢪس'
 elseif tonumber(user_id) == tonumber(1466244479) then
-var = 'مطوࢪ السوࢪس'
-elseif tonumber(user_id) == tonumber(1516553352) then
 var = 'مطوࢪ السوࢪس'
 elseif tonumber(user_id) == tonumber(1470367089) then
 var = 'مطوࢪ السوࢪس'
@@ -1147,7 +1119,7 @@ send(msg.chat_id_, msg.id_,' *◈︙اصدار سورس روليكس* \n*◈︙�
 end
 if text == 'قناه تحديثات البوت ◈' and DevROLEXW(msg) then 
 database:del(bot_id..'Srt:Bot') 
-send(msg.chat_id_, msg.id_,' ◈︙[تحديثات البوت](t.me/T_aLeN) \n◈︙[قناه السورس](t.me/kksili)')
+send(msg.chat_id_, msg.id_,' ◈︙[تحديثات البوت](t.me/kksili) \n◈︙[قناه السورس](t.me/T_aLeN)')
 end
 if text == "ضع اسم للبوت ◈" and DevROLEXW(msg) then  
 database:setex(bot_id..'Set:Name:Bot'..msg.sender_user_id_,300,true) 
@@ -2648,7 +2620,7 @@ if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or tex
 Text = "ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ sᴏᴜʀᴄʀ ʀᴏʟᴇх\n\n[◈  ʀᴏʟᴇх ᴄʜᴀɴɴᴇʟ](http://t.me/T_aLeN)\n\n[◈  ɪɴғᴏ sᴏᴜʀᴄᴇ](http://t.me/kksili)\n\n[◈  ʀᴏʟᴇх ᴅᴇᴠᴇʟᴏᴘᴇʀ](http://t.me/XCGCC)\n\n[◈  ʙᴏᴛ ʀᴏʟᴇх](http://t.me/XCGCCBOT)"
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '◈ sᴏᴜʀᴄʀ ʀᴏʟᴇх',url="t.me/kksili/839"}},
+{{text = '◈ sᴏᴜʀᴄʀ ʀᴏʟᴇх',url="t.me/kksili/906"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/kksili&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
