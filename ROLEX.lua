@@ -2717,6 +2717,14 @@ send(msg.chat_id_, msg.id_,' *◈︙تم حفظ الامر*')
 database:del(bot_id.."Set:Cmd:Group1"..msg.chat_id_..':'..msg.sender_user_id_)
 return false
 end
+if text == "الساعه" then
+local ramsesj20 = "\n*◉︙الساعه الان :* "..os.date("%I:%M%p")
+send(msg.chat_id_, msg.id_,ramsesj20)
+end
+if text == "التاريخ" then
+local ramsesj20 =  "\n*◉︙التاريخ :* "..os.date("%Y/%m/%d")
+send(msg.chat_id_, msg.id_,ramsesj20)
+end
 if text == 'السيرفر' and SudoBot(msg) then 
 send(msg.chat_id_, msg.id_, io.popen([[
 linux_version=`lsb_release -ds`
