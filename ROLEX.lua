@@ -9765,7 +9765,7 @@ end
 send(msg.chat_id_, msg.id_,"◈︙تم مسح الميديا بنجاح")
 end
 if text == "فويس" then
-data,res = https.request('https://vvvzvv.ml/Foes/Teland.php')
+data,res = https.request('https://vvvzvv.ml/Foes/Sad.php')
 if res == 200 then
 audios = json:decode(data)
 if audios.Info == true then
